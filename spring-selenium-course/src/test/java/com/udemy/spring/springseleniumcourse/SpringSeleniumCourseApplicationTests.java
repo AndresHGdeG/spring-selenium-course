@@ -14,11 +14,5 @@ class SpringSeleniumCourseApplicationTests {
     void contextLoads() {
         user.printDetails();
     }
-    /*
-        Address address = new Address();
-        Salary salary = new Salary();
-        User user = new User(address, salary);
-        user.printDetails();
-     */
 
 }
