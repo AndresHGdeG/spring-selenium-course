@@ -1,5 +1,8 @@
 package com.udemy.spring.springseleniumcourse;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Salary {
     private int amount;
 
