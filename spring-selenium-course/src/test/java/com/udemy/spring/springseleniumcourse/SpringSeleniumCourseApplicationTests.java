@@ -11,15 +11,10 @@ import java.util.List;
 class SpringSeleniumCourseApplicationTests {
 
     @Autowired
-    private User user;
-
-    @Autowired
-    private Faker fakerAuto;
-
+    private Television tv;
     @Test
     void contextLoads() {
-        System.out.println(this.fakerAuto.name().fullName());
-        user.printDetails();
+        this.tv.playMovie();
     }
 
 }
