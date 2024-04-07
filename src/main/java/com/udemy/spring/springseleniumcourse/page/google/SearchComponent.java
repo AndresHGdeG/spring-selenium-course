@@ -4,15 +4,17 @@ import com.udemy.spring.springseleniumcourse.page.Base;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class SearchComponent extends Base {
 
     @FindBy(name = "q")
     private WebElement searchBox;
 
-    @FindBy(name = "btnk")
+    @FindBy(name = "btnK")
     private List<WebElement> searchButns;
 
     public void search(final String keyword) {

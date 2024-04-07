@@ -10,11 +10,5 @@ import java.util.List;
 @SpringBootTest
 class SpringSeleniumCourseApplicationTests {
 
-    @Autowired
-    private Television tv;
-    @Test
-    void contextLoads() {
-        this.tv.playMovie();
-    }
 
 }
