@@ -11,7 +11,7 @@ import java.util.List;
 public class SearchResult extends Base {
 
 
-    @FindBy(css ="div.ULSxyf")
+    @FindBy(css ="div.MjjYud")
     private List<WebElement> results;
 
     public int getCount() {
