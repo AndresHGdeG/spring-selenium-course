@@ -12,6 +12,7 @@ import java.io.IOException;
 
 public class Google1Test extends SpringBaseTestNGTest {
 
+    @Lazy
     @Autowired
     private GooglePage googlePage;
 
@@ -21,6 +22,7 @@ public class Google1Test extends SpringBaseTestNGTest {
 
     @Test
     public void googleTest() throws IOException {
+        System.out.println("Hello world");
         this.googlePage.goTo();
         Assert.assertTrue(this.googlePage.isAt());
         //Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
