@@ -30,8 +30,8 @@ public class Google1Test extends SpringBaseTestNGTest {
         this.googlePage.getSearchComponent().search("enviroment");
         Assert.assertTrue(this.googlePage.getSearchResult().isAt());
         Assert.assertTrue(this.googlePage.getSearchResult().getCount() > 2);
-        //this.screenShotUtil.takeScreenShot("img.png");
-        //this.googlePage.close();
+        this.screenShotUtil.takeScreenShot();
+        this.googlePage.close();
     }
 
 }
