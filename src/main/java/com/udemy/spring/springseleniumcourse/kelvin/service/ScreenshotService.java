@@ -1,6 +1,5 @@
-package com.udemy.spring.springseleniumcourse.util;
+package com.udemy.spring.springseleniumcourse.kelvin.service;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.util.FileCopyUtils;
 import com.github.javafaker.Faker;
 
@@ -16,8 +16,8 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 @Lazy
-@Component
-public class ScreenShotUtil {
+@Service
+public class ScreenshotService {
 
     @Autowired
     private ApplicationContext ctx;

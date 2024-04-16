@@ -1,6 +1,6 @@
 package com.udemy.spring.springseleniumcourse.page.google;
 
-import com.udemy.spring.springseleniumcourse.annotation.Page;
+import com.udemy.spring.springseleniumcourse.kelvin.annotation.Page;
 import com.udemy.spring.springseleniumcourse.page.Base;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

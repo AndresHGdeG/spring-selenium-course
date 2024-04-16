@@ -1,4 +1,4 @@
-package com.udemy.spring.springseleniumcourse.config;
+package com.udemy.spring.springseleniumcourse.kelvin.scope;
 
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.SessionId;

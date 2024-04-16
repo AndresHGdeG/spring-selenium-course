@@ -1,4 +1,4 @@
-package com.udemy.spring.springseleniumcourse.annotation;
+package com.udemy.spring.springseleniumcourse.kelvin.annotation;
 
 import net.bytebuddy.implementation.bind.annotation.RuntimeType;
 import org.springframework.context.annotation.Lazy;

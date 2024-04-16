@@ -1,5 +1,6 @@
-package com.udemy.spring.springseleniumcourse.config;
+package com.udemy.spring.springseleniumcourse.kelvin.config;
 
+import com.udemy.spring.springseleniumcourse.kelvin.annotation.ThreadScopeBean;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,18 +8,15 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
-import org.springframework.context.annotation.Scope;
 
 
 @Configuration
 @Profile("!remote")
 public class WebDriverConfig {
 
-    @Bean
-    @Scope("browserscope")
+    @ThreadScopeBean
     //@Scope("prototype")
     @ConditionalOnProperty(name = "browser", havingValue = "chrome")
     public WebDriver chromeDriver(){
@@ -26,15 +24,15 @@ public class WebDriverConfig {
         return new ChromeDriver();
     }
 
-    @Bean
     //@Primary
+    @ThreadScopeBean
     @ConditionalOnProperty(name = "browser", havingValue = "firefox")
-    public WebDriver fireFoxDriver(){
+    public WebDriver firefoxDriver(){
         WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver();
     }
 
-    @Bean
+    @ThreadScopeBean
     @ConditionalOnMissingBean
     public WebDriver edgeDriver(){
         WebDriverManager.edgedriver().setup();

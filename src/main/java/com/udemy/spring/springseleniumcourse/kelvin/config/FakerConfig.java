@@ -1,4 +1,4 @@
-package com.udemy.spring.springseleniumcourse.config;
+package com.udemy.spring.springseleniumcourse.kelvin.config;
 
 import com.github.javafaker.Faker;
 import org.springframework.context.annotation.Bean;
